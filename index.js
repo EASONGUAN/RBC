@@ -6,8 +6,6 @@ import { connectToDBServer } from "./Database/mongoUtil.js";
 const app = express();
 const PORT = 5000;
 
-connectToDBServer();
-
 app.use(bodyParser.json());
 
 app.use('/stock', stockRoutes);
